@@ -30,11 +30,17 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
             <ul class="nav-items">
-                <li><a href="#">Home</a></li>
-                <!-- <li><a href="#">Products</a></li> -->
+                <li><a href="index.html">Home</a></li>
+                <li class="products-list"><a href="#">Products<i class="fa-solid fa-circle-chevron-down"></i></a>
+                   <ul class="dropdown" id="products-menu">
+                      <li><a href="watch.html">Watch</a></li>
+                      <li><a href="bag.html">Bag</a></li>
+                      <li><a href="shoes.html">Shoes</a></li>
+                   </ul>
+                </li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Login</a></li>
+                <li><a href="login.html">Login</a></li>
                 <li><a href="#">Profile<i class="fa-solid fa-user"></i></a></li>
                 <li><a href="#">Cart<i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
@@ -71,15 +77,15 @@
         <section class="products">
             <h1 class="categories-title">Categories</h1>
             <div class="categories">
-                <div class="categories-watch">
+                <div class="categories-watch" id="watch-div">
                     <div>Watch</div>
                     <img src="./assets/watch.png" alt="">
                 </div>
-                <div style="background-color: #FF589B;" class="categories-watch">
+                <div style="background-color: #FF589B;" class="categories-watch" id="bag-div">
                     <div>Bag</div>
                     <img src="./assets/bag.png" alt="">
                 </div>
-                <div style="background-color: #4289FF;" class="categories-watch">
+                <div style="background-color: #4289FF;" class="categories-watch" id="shoes-div">
                     <div>Shoes</div>
                     <img src="./assets/shoes.png" alt="shoes photo">
                 </div>
@@ -212,9 +218,21 @@
     <!-- end main section -->
 
     <!-- start footer section -->
-    <footer>
-
+    <footer class="footer">
+        <section class="footer-content">
+            <h3 class="footer-content-title">Shop<span>Lio</span> <span class="h3-span">Products</span></h3>
+            <p class="footer-content-details">Copyright © 2025 ShopLio Products</p>
+            <p class="footer-content-details">All rights reserved</p>
+            <div class="footer-links">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </section>
     </footer>
+    <!-- javaScript file -->
+     <script src="./scripts/script.js"></script>
 </body>
 
 </html>
