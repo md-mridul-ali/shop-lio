@@ -28,6 +28,10 @@ body{
     right: 2px;
     font-size: 24px;
 }
+.wrapper i:hover{
+     cursor: pointer;
+     background-color: #333;
+}
 .wrapper h1{
     font-size: 36px;
     text-align: center;
