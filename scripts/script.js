@@ -19,3 +19,21 @@ productsList.addEventListener('click', function(event){
     productsList.classList.toggle('active');
     // console.log('products clicked')
 });
+
+// add to cart button
+const addBtns=document.getElementsByClassName("add-btn");
+for(let addBtn of addBtns)
+{
+    addBtn.addEventListener("click", function(){
+        console.log("add button clicked");
+    })
+}
+
+// buy button 
+const buyBtns=document.getElementsByClassName("buy-btn");
+for(let buyBtn of buyBtns)
+{
+    buyBtn.addEventListener("click", function(){
+        console.log("Buy button clicked");
+    })
+}
