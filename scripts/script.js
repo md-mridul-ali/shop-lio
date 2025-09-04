@@ -17,5 +17,5 @@ const productsMenu=document.getElementById('products-menu');
 productsList.addEventListener('click', function(event){
     event.preventDefault();
     productsList.classList.toggle('active');
-    console.log('products clicked')
+    // console.log('products clicked')
 });

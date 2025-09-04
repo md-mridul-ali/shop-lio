@@ -61,7 +61,8 @@ header{
 }
 /* Dropdown hidden by default */
 .dropdown {
-  display: none;
+  /* display: none; */
+  display: block;
   position: absolute;
   top: 100%;
   left: 0;

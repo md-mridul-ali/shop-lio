@@ -67,6 +67,63 @@ header{
     background-color: bisque;
     margin-left: 100px;
 }
+/* watch style */
+.shoes{
+    margin: 70px 20px 50px 20px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.shoes-title{
+    font-weight: 600;
+    font-size: 36px;
+    color: #1F1F1F;
+}
+.shoes-parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.shoes-card
+{
+    width: 350px;
+    height: 560p;
+    background-color: #F4F4F4;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
+}
+.shoe-details{
+    text-align: center;
+}
+.shoe-details h2{
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #1F1F1F;
+}
+.shoe-details p{
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #4E4E4E;
+}
+.shoe-details .price{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #1F1F1F;
+}
+.shoe-details .cart-btn{
+    height: 52px;
+    width: 168px;
+    margin-bottom: 10px;
+    background-color: #1F1F1F;
+    font-size: 16px;
+    color: #FFFFFF;
+    border-radius: 10px;
+}
+.shoe-details .cart-btn i{
+    margin-left: 5px;
+}
 /* footer style */
 .footer {
     background-color: rgb(1, 1, 22);
