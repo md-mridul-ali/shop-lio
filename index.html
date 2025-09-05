@@ -42,13 +42,40 @@
                 <li><a href="#">Contact Us</a></li>
                 <li><a href="login.html">Login</a></li>
                 <li><a href="#">Profile<i class="fa-solid fa-user"></i></a></li>
-                <li><a href="#">Cart<i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a class="cart-icon" href="#">Cart<i class="fa-solid fa-cart-shopping"></i> <span class="cart-item-count"></span></a></li>
+                <!-- extra -->
+    
             </ul>
         </nav>
 
     </header>
     <!-- End Header section -->
-
+    <!-- start view cart section -->
+    <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <div class="cart-content">
+            <div class="cart-box">
+                <img class="cart-img" src="./assets/watches/1.jpg" alt="">
+                <div class="cart-detail">
+                    <h2 class="cart-product-title">Casual watch</h2>
+                    <span class="cart-price">$100</span>
+                    <div class="cart-quantity">
+                        <button id="decrement">-</button>
+                        <span class="number">1</span>
+                        <button id="increment">+</button>
+                    </div>
+                </div>
+                <i class="fa-solid fa-trash cart-remove"></i>
+            </div>
+        </div>
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0</div>
+        </div>
+        <button class="btn-buy">Buy Now</button>
+        <i class="fa-solid fa-xmark" id="cart-close"></i>
+    </div>
+    <!-- end view cart section -->
     <!-- start main section -->
     <main>
         <!-- start banner section -->
@@ -99,12 +126,12 @@
             <div class="shoes-parent">
                 <div class="shoes-card">
                     <figure>
-                        <img src="./assets/shoe-1.png" alt="">
+                        <img class="images" id="shoes-img" src="./assets/shoe-1.png" alt="">
                     </figure>
                     <div class="shoe-details">
-                        <h2>Reebok Dart Men’s Shoes</h2>
+                        <h2 id="shoes-title">Reebok Dart Men’s Shoes</h2>
                         <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
-                        <p class="price">$1289</p>
+                        <p class="price" >$<span id="shoes-price">1289</span></p>
                         <div class="button">
                             <button class="buy-btn">Buy Now<i class="fa-solid fa-arrow-right btn-icon"></i></button>
                             <button class="add-btn">Add to Cart<i class="fa-solid fa-arrow-right btn-icon"></i></button>
@@ -113,7 +140,7 @@
                 </div>
                 <div class="shoes-card">
                     <figure>
-                        <img src="./assets/shoe-2.png" alt="">
+                        <img class="images" src="./assets/shoe-2.png" alt="">
                     </figure>
                     <div class="shoe-details">
                         <h2>Reebok Pump</h2>
@@ -127,7 +154,7 @@
                 </div>
                 <div class="shoes-card">
                     <figure>
-                        <img src="./assets/shoe-3.png" alt="">
+                        <img class="images" src="./assets/shoe-3.png" alt="">
                     </figure>
                     <div class="shoe-details">
                         <h2>Reebok All Terrain</h2>
@@ -148,7 +175,7 @@
             <div class="shoes-parent">
                 <div class="shoes-card">
                     <figure>
-                        <img style="height: 250px;" src="./assets/bag-1.png" alt="">
+                        <img class="images" style="height: 250px;" src="./assets/bag-1.png" alt="">
                     </figure>
                     <div class="shoe-details">
                         <h2>Reebok Dart Men’s Shoes</h2>
@@ -162,7 +189,7 @@
                 </div>
                 <div class="shoes-card">
                     <figure>
-                        <img style="height: 250px;" src="./assets/bag-2.png" alt="">
+                        <img class="images" style="height: 250px;" src="./assets/bag-2.png" alt="">
                     </figure>
                     <div class="shoe-details">
                         <h2>Reebok Pump</h2>
@@ -176,7 +203,7 @@
                 </div>
                 <div class="shoes-card">
                     <figure>
-                        <img style="height: 250px;" src="./assets/bag-3.png" alt="">
+                        <img class="images" style="height: 250px;" src="./assets/bag-3.png" alt="">
                     </figure>
                     <div class="shoe-details">
                         <h2>Reebok All Terrain</h2>
@@ -197,7 +224,7 @@
             <div class="shoes-parent">
                 <div class="shoes-card">
                     <figure>
-                        <img class="watch" style="height: 250px; width: 360px;" src="./assets/watches/2.jpg" alt="">
+                        <img class="images watch"  style="height: 250px; width: 360px;" src="./assets/watches/2.jpg" alt="">
                     </figure>
                     <div class="shoe-details">
                         <h2>Reebok Dart Men’s Shoes</h2>
@@ -211,7 +238,7 @@
                 </div>
                 <div class="shoes-card">
                     <figure>
-                        <img class="watch" style="height: 250px; width: 360px;" src="./assets/watches/50.jpg" alt="">
+                        <img class="images watch" style="height: 250px; width: 360px;" src="./assets/watches/50.jpg" alt="">
                     </figure>
                     <div class="shoe-details">
                         <h2>Reebok Pump</h2>
@@ -225,7 +252,7 @@
                 </div>
                 <div class="shoes-card">
                     <figure>
-                        <img class="watch" style="height: 250px; width: 360px;" src="./assets/watches/55.jpg" alt="">
+                        <img class="images watch" style="height: 250px; width: 360px;" src="./assets/watches/55.jpg" alt="">
                     </figure>
                     <div class="shoe-details">
                         <h2>Reebok All Terrain</h2>

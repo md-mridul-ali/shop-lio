@@ -21,13 +21,12 @@ productsList.addEventListener('click', function(event){
 });
 
 // add to cart button
-const addBtns=document.getElementsByClassName("add-btn");
-for(let addBtn of addBtns)
+function getElement(id)
 {
-    addBtn.addEventListener("click", function(){
-        console.log("add button clicked");
-    })
+    const element=document.getElementById(id);
+    return element;
 }
+
 
 // buy button 
 const buyBtns=document.getElementsByClassName("buy-btn");
