@@ -56,6 +56,9 @@ header{
     font-size: 16px;
     font-weight: 500;
 }
+.nav-items li{
+    color: #FFFFFF;
+}
 .nav li{
     position: relative;
 }
@@ -78,7 +81,7 @@ header{
 }
 
 /* Show when active */
-.dropdown .active{
+ .show{
   display: block;
 }
 /* cart logo */
@@ -115,6 +118,12 @@ header{
     padding: 65px 20px 40px;
     z-index: 100;
     overflow: auto;
+    transition: 0.32s;
+    /* display: none; */
+}
+ .active{
+    /* display: block; */
+    right: 0;
 }
 .cart-title{
     text-align: center;

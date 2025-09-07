@@ -32,17 +32,18 @@
             <ul class="nav-items">
                 <li><a href="index.html">Home</a></li>
                 <li class="products-list" id="products-list"><a href="#">Products<i class="fa-solid fa-circle-chevron-down"></i></a>
-                   <ul class="dropdown active" id="products-menu">
-                      <li><a href="./watch.html">Watch</a></li>
-                      <li><a href="./bag.html">Bag</a></li>
-                      <li><a href="./shoes.html">Shoes</a></li>
+                   <ul class="dropdown" id="products-menu">
+                      <li><a id="watch" href="./watch.html">Watch</a></li>
+                      <li><a id="bag" href="./bag.html">Bag</a></li>
+                      <li><a id="shoes" href="./shoes.html">Shoes</a></li>
                    </ul>
                 </li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Contact Us</a></li>
                 <li><a href="login.html">Login</a></li>
                 <li><a href="#">Profile<i class="fa-solid fa-user"></i></a></li>
-                <li><a class="cart-icon" href="#">Cart<i class="fa-solid fa-cart-shopping"></i> <span class="cart-item-count"></span></a></li>
+                
+                <li><a id="cart-icon" href="">Cart<i class="fa-solid fa-cart-shopping"></i> <span class="cart-item-count"></span></a></li>
                 <!-- extra -->
     
             </ul>
@@ -53,8 +54,11 @@
     <!-- start view cart section -->
     <div class="cart">
         <h2 class="cart-title">Your Cart</h2>
-        <div class="cart-content">
-            <div class="cart-box">
+        <div   id="cart" >
+    
+        </div>
+         <!-- <div class="cart-content">
+             <div class="cart-box">
                 <img class="cart-img" src="./assets/watches/1.jpg" alt="">
                 <div class="cart-detail">
                     <h2 class="cart-product-title">Casual watch</h2>
@@ -67,10 +71,10 @@
                 </div>
                 <i class="fa-solid fa-trash cart-remove"></i>
             </div>
-        </div>
+        </div> -->
         <div class="total">
             <div class="total-title">Total</div>
-            <div class="total-price">$0</div>
+            <div>$<span class="total-price">0</span></div>
         </div>
         <button class="btn-buy">Buy Now</button>
         <i class="fa-solid fa-xmark" id="cart-close"></i>
@@ -131,7 +135,7 @@
                     <div class="shoe-details">
                         <h2 id="shoes-title">Reebok Dart Men’s Shoes</h2>
                         <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
-                        <p class="price" >$<span id="shoes-price">1289</span></p>
+                        <p class="price" >$<span id="price">1289</span></p>
                         <div class="button">
                             <button class="buy-btn">Buy Now<i class="fa-solid fa-arrow-right btn-icon"></i></button>
                             <button class="add-btn">Add to Cart<i class="fa-solid fa-arrow-right btn-icon"></i></button>
@@ -145,7 +149,7 @@
                     <div class="shoe-details">
                         <h2>Reebok Pump</h2>
                         <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
-                        <p class="price">$1289</p>
+                        <p class="price">$ <span id="price">1289</span></p>
                         <div class="button">
                             <button class="buy-btn">Buy Now<i class="fa-solid fa-arrow-right btn-icon"></i></button>
                             <button class="add-btn">Add to Cart<i class="fa-solid fa-arrow-right btn-icon"></i></button>
@@ -159,7 +163,7 @@
                     <div class="shoe-details">
                         <h2>Reebok All Terrain</h2>
                         <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
-                        <p class="price">$1289</p>
+                        <p class="price">$ <span id="price">1289</span></p>
                         <div class="button">
                             <button class="buy-btn">Buy Now<i class="fa-solid fa-arrow-right btn-icon"></i></button>
                             <button class="add-btn">Add to Cart<i class="fa-solid fa-arrow-right btn-icon"></i></button>
@@ -180,7 +184,7 @@
                     <div class="shoe-details">
                         <h2>Reebok Dart Men’s Shoes</h2>
                         <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
-                        <p class="price">$1289</p>
+                        <p class="price">$ <span id="price">1289</span></p>
                         <div class="button">
                             <button class="buy-btn">Buy Now<i class="fa-solid fa-arrow-right btn-icon"></i></button>
                             <button class="add-btn">Add to Cart<i class="fa-solid fa-arrow-right btn-icon"></i></button>
@@ -194,7 +198,7 @@
                     <div class="shoe-details">
                         <h2>Reebok Pump</h2>
                         <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
-                        <p class="price">$1289</p>
+                        <p class="price">$ <span id="price">1289</span></p>
                         <div class="button">
                             <button class="buy-btn">Buy Now<i class="fa-solid fa-arrow-right btn-icon"></i></button>
                             <button class="add-btn">Add to Cart<i class="fa-solid fa-arrow-right btn-icon"></i></button>
@@ -208,7 +212,7 @@
                     <div class="shoe-details">
                         <h2>Reebok All Terrain</h2>
                         <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
-                        <p class="price">$1289</p>
+                        <p class="price">$ <span id="price">1289</span></p>
                         <div class="button">
                             <button class="buy-btn">Buy Now<i class="fa-solid fa-arrow-right btn-icon"></i></button>
                             <button class="add-btn">Add to Cart<i class="fa-solid fa-arrow-right btn-icon"></i></button>
@@ -229,7 +233,7 @@
                     <div class="shoe-details">
                         <h2>Reebok Dart Men’s Shoes</h2>
                         <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
-                        <p class="price">$1289</p>
+                        <p class="price">$ <span id="price">1289</span></p>
                         <div class="button">
                             <button class="buy-btn">Buy Now<i class="fa-solid fa-arrow-right btn-icon"></i></button>
                             <button class="add-btn">Add to Cart<i class="fa-solid fa-arrow-right btn-icon"></i></button>
@@ -243,7 +247,7 @@
                     <div class="shoe-details">
                         <h2>Reebok Pump</h2>
                         <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
-                        <p class="price">$1289</p>
+                        <p class="price">$ <span id="price">1289</span></p>
                         <div class="button">
                             <button class="buy-btn">Buy Now<i class="fa-solid fa-arrow-right btn-icon"></i></button>
                             <button class="add-btn">Add to Cart<i class="fa-solid fa-arrow-right btn-icon"></i></button>
@@ -257,7 +261,7 @@
                     <div class="shoe-details">
                         <h2>Reebok All Terrain</h2>
                         <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
-                        <p class="price">$1289</p>
+                        <p class="price">$ <span id="price">1289</span></p>
                         <div class="button">
                             <button class="buy-btn">Buy Now<i class="fa-solid fa-arrow-right btn-icon"></i></button>
                             <button class="add-btn">Add to Cart<i class="fa-solid fa-arrow-right btn-icon"></i></button>
@@ -286,7 +290,7 @@
         </section>
     </footer>
     <!-- javaScript file -->
-     <script src="./scripts/script.js"></script>
+    <script src="./scripts/script.js"></script>
 </body>
 
 </html>
