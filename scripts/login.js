@@ -1,4 +1,6 @@
-const loginCloseBtn=document.getElementById('login-close-btn');
-loginCloseBtn.addEventListener('click', function(){
-    window.location.href="./index.html";
-})
+function showForm(formId)
+{
+     document.querySelectorAll(".form-box")
+     .forEach(form=> form.classList.remove("active"));
+     document.getElementById(formId).classList.add("active");
+}
