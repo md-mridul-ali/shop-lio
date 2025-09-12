@@ -33,7 +33,9 @@ if(isset($_POST['login'])){
         if(password_verify($password, $user['password'])){
             $_SESSION['name'] = $user['name'];
             $_SESSION['email'] = $user['email'];
-             
+             $user['id'];
+             setcookie("id", $user['id'], time()+86400, "/");
+            //  header("Location:../new.php");
             if($user['role'] === 'admin'){
                 header("Location:../admin.php");
             }

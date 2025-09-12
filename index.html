@@ -54,13 +54,18 @@
     <!-- End Header section -->
     <!-- profile section -->
     <div class="profile">
-        <h2 style="text-align: center; font-size: 24px; margin-bottom: 10px; margin-top: 10px; font-weight: bold;">Your Profile</h2>
+        <h2 style="text-align: center; font-size: 24px; margin-bottom: 10px; margin-top: 10px; font-weight: bold;">Your
+            Profile</h2>
         <hr>
-        
-           <p><button><i class="fa-regular fa-circle-user" style="margin-right:10px"></i>Edit Profile<i class="fa-solid fa-angle-right right-arrow " style="margin-left: 135px;"></i></button></p>
-           <p><button><i class="fa-solid fa-gear" style="margin-right:10px"></i>Settings And Privacy<i class="fa-solid fa-angle-right right-arrow " style="margin-left: 60px;"></i></button></p>
-           <p><button><i class="fa-solid fa-question" style="margin-right:10px"></i>Help and Support<i class="fa-solid fa-angle-right right-arrow " style="margin-left: 80px;"></i></button></p>
-           <p><button id="log-out-btn"><i class="fa-solid fa-right-from-bracket log-out" style="margin-right:10px"></i>Log Out<i class="fa-solid fa-angle-right right-arrow " style="margin-left: 155px;"></i></button></p>
+
+        <p><button id="view-profile"><i class="fa-regular fa-circle-user" style="margin-right:10px"></i>Edit Profile<i
+                    class="fa-solid fa-angle-right right-arrow " style="margin-left: 135px;"></i></button></p>
+        <p><button><i class="fa-solid fa-gear" style="margin-right:10px"></i>Settings And Privacy<i
+                    class="fa-solid fa-angle-right right-arrow " style="margin-left: 60px;"></i></button></p>
+        <p><button><i class="fa-solid fa-question" style="margin-right:10px"></i>Help and Support<i
+                    class="fa-solid fa-angle-right right-arrow " style="margin-left: 80px;"></i></button></p>
+        <p><button id="log-out-btn"><i class="fa-solid fa-right-from-bracket log-out" style="margin-right:10px"></i>Log
+                Out<i class="fa-solid fa-angle-right right-arrow " style="margin-left: 155px;"></i></button></p>
     </div>
     <!-- start view cart section -->
     <div class="cart">
@@ -87,10 +92,34 @@
             <div class="total-title">Total</div>
             <div>$<span class="total-price">0</span></div>
         </div>
-        <button class="btn-buy">Buy Now</button>
+        <button class="btn-buy" id="buy-btn">Buy Now</button>
         <i class="fa-solid fa-xmark" id="cart-close"></i>
     </div>
     <!-- end view cart section -->
+
+    <!-- payment system -->
+    <section class="payment-method">
+        <h2 style="margin-bottom: 20px;">Payment Procedure</h2>
+        <div>
+            <form action="php/checkout.php" method="post">
+                <input type="hidden" name="total-price" id="checkout">
+                <label for="">Select Area:</label>
+                <select name="" id="">
+                    <option value="">--select--</option>
+                    <option value="">Uttara</option>
+                    <option value="">Mirpur</option>
+                    <option value="">Bashundhra</option>
+                </select>
+                <br>
+                <label for="">Select Payment Method:</label>
+                <label><input type="radio" name="hobby" value="reading"> Online</label>
+                <label><input type="radio" name="hobby" value="traveling"> Cash On Delivery</label>
+                <hr style="margin-top: 10px; margin-bottom: 10px;">
+                <p id="check">Total: $</p><p id="total-p"></p>
+               <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
     <!-- start main section -->
     <main>
         <!-- start banner section -->

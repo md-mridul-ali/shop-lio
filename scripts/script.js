@@ -35,12 +35,27 @@ profile.addEventListener("click", function(e){
     console.log("profile clicked");
     profileShow.classList.toggle("show");
 });
+// view profile
+const viewProfile=document.getElementById('view-profile');
+viewProfile.addEventListener('click', function(){
+    window.location.href="show.php";
+})
 // logout btn
 const logOut=document.getElementById('log-out-btn');
 logOut.addEventListener("click", function(e){
     e.preventDefault();
     console.log("log out btn clicked");
     window.location.href="login.php";
+})
+// payment
+const buyBtn=document.getElementById('buy-btn');
+const paymentMethod=document.querySelector(".payment-method");
+buyBtn.addEventListener("click", function(e){
+     e.preventDefault();
+     console.log("Buy btn clicked");
+     paymentMethod.classList.add("show")
+     cart.classList.remove("active")
+     
 })
 // add to cart button
 const cartIcon = document.getElementById("cart-icon");
@@ -96,7 +111,15 @@ for (let addBtn of addBtns) {
                 newDiv.remove();
                 updateTotalPrice();
             });
+        // payment
+        const check=document.getElementById('check');
+        const newp=document.createElement("span");
+        newp.innerHTML=`
+        
+          <span>${price}</span>
 
+        `;
+       
         // increment decrement
         newDiv.querySelector(".cart-quantity")
             .addEventListener("click", function (event) {
@@ -133,6 +156,8 @@ const updateTotalPrice=()=>{
         total=total+price*quantity;
     });
     totalPriceElement.innerHTML=`${total}`;
+    document.getElementById("checkout").value=total;
+    document.getElementById("total-p").innerHTML=`${total}`;
 };
 // buy button 
 const buyBtns = document.getElementsByClassName("buy-btn");
