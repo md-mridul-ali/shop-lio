@@ -27,8 +27,21 @@ productsList.addEventListener('click', function (event) {
     productsMenu.classList.toggle("show");
     // console.log('products clicked')
 });
-
-
+// profile
+const profile=document.getElementById('profile');
+const profileShow=document.querySelector(".profile");
+profile.addEventListener("click", function(e){
+    e.preventDefault();
+    console.log("profile clicked");
+    profileShow.classList.toggle("show");
+});
+// logout btn
+const logOut=document.getElementById('log-out-btn');
+logOut.addEventListener("click", function(e){
+    e.preventDefault();
+    console.log("log out btn clicked");
+    window.location.href="login.php";
+})
 // add to cart button
 const cartIcon = document.getElementById("cart-icon");
 const cart = document.querySelector(".cart");
@@ -52,7 +65,7 @@ for (let addBtn of addBtns) {
         // console.log(title);
         const price = addBtn.parentNode.parentNode.parentNode.childNodes[3].childNodes[5].childNodes[1].innerText;
         // console.log(price);
-    //    alert("successfully add");
+       alert("Product added successfully");
         const cartAdd = document.getElementById("cart");
         // const cartContent=querySelector(".cart-content");
         const newDiv = document.createElement("div");

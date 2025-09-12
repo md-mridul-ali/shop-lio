@@ -31,33 +31,44 @@
             </div>
             <ul class="nav-items">
                 <li><a href="index.html">Home</a></li>
-                <li class="products-list" id="products-list"><a href="#">Products<i class="fa-solid fa-circle-chevron-down"></i></a>
-                   <ul class="dropdown" id="products-menu">
-                      <li><a id="watch" href="./watch.html">Watch</a></li>
-                      <li><a id="bag" href="./bag.html">Bag</a></li>
-                      <li><a id="shoes" href="./shoes.html">Shoes</a></li>
-                   </ul>
+                <li class="products-list" id="products-list"><a href="#">Products<i
+                            class="fa-solid fa-circle-chevron-down"></i></a>
+                    <ul class="dropdown" id="products-menu">
+                        <li><a id="watch" href="./watch.html">Watch</a></li>
+                        <li><a id="bag" href="./bag.html">Bag</a></li>
+                        <li><a id="shoes" href="./shoes.html">Shoes</a></li>
+                    </ul>
                 </li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Contact Us</a></li>
                 <li><a href="./login.php">Login</a></li>
-                <li><a href="#">Profile<i class="fa-solid fa-user"></i></a></li>
-                
-                <li><a id="cart-icon" href="">Cart<i class="fa-solid fa-cart-shopping"></i> <span class="cart-item-count"></span></a></li>
+                <li><a href="#" id="profile">Profile<i class="fa-solid fa-user"></i></a></li>
+                <li><a id="cart-icon" href="">Cart<i class="fa-solid fa-cart-shopping"></i> <span
+                            class="cart-item-count"></span></a></li>
                 <!-- extra -->
-    
+
             </ul>
         </nav>
 
     </header>
     <!-- End Header section -->
+    <!-- profile section -->
+    <div class="profile">
+        <h2 style="text-align: center; font-size: 24px; margin-bottom: 10px; margin-top: 10px; font-weight: bold;">Your Profile</h2>
+        <hr>
+        
+           <p><button><i class="fa-regular fa-circle-user" style="margin-right:10px"></i>Edit Profile<i class="fa-solid fa-angle-right right-arrow " style="margin-left: 135px;"></i></button></p>
+           <p><button><i class="fa-solid fa-gear" style="margin-right:10px"></i>Settings And Privacy<i class="fa-solid fa-angle-right right-arrow " style="margin-left: 60px;"></i></button></p>
+           <p><button><i class="fa-solid fa-question" style="margin-right:10px"></i>Help and Support<i class="fa-solid fa-angle-right right-arrow " style="margin-left: 80px;"></i></button></p>
+           <p><button id="log-out-btn"><i class="fa-solid fa-right-from-bracket log-out" style="margin-right:10px"></i>Log Out<i class="fa-solid fa-angle-right right-arrow " style="margin-left: 155px;"></i></button></p>
+    </div>
     <!-- start view cart section -->
     <div class="cart">
         <h2 class="cart-title">Your Cart</h2>
-        <div   id="cart" >
-    
+        <div id="cart">
+
         </div>
-         <!-- <div class="cart-content">
+        <!-- <div class="cart-content">
              <div class="cart-box">
                 <img class="cart-img" src="./assets/watches/1.jpg" alt="">
                 <div class="cart-detail">
@@ -135,7 +146,7 @@
                     <div class="shoe-details">
                         <h2 id="shoes-title">Reebok Dart Men’s Shoes</h2>
                         <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
-                        <p class="price" >$<span id="price">1289</span></p>
+                        <p class="price">$<span id="price">1289</span></p>
                         <div class="button">
                             <!-- <button class="buy-btn">Buy Now<i class="fa-solid fa-arrow-right btn-icon"></i></button> -->
                             <button class="add-btn">Add to Cart<i class="fa-solid fa-arrow-right btn-icon"></i></button>
@@ -223,12 +234,13 @@
         </section>
         <!-- bag section end here -->
         <!-- watch section start here -->
-         <section class="shoes">
+        <section class="shoes">
             <h1 class="shoes-title">Watches</h1>
             <div class="shoes-parent">
                 <div class="shoes-card">
                     <figure>
-                        <img class="images watch"  style="height: 250px; width: 360px;" src="./assets/watches/2.jpg" alt="">
+                        <img class="images watch" style="height: 250px; width: 360px;" src="./assets/watches/2.jpg"
+                            alt="">
                     </figure>
                     <div class="shoe-details">
                         <h2>Reebok Dart Men’s Shoes</h2>
@@ -242,7 +254,8 @@
                 </div>
                 <div class="shoes-card">
                     <figure>
-                        <img class="images watch" style="height: 250px; width: 360px;" src="./assets/watches/50.jpg" alt="">
+                        <img class="images watch" style="height: 250px; width: 360px;" src="./assets/watches/50.jpg"
+                            alt="">
                     </figure>
                     <div class="shoe-details">
                         <h2>Reebok Pump</h2>
@@ -256,7 +269,8 @@
                 </div>
                 <div class="shoes-card">
                     <figure>
-                        <img class="images watch" style="height: 250px; width: 360px;" src="./assets/watches/55.jpg" alt="">
+                        <img class="images watch" style="height: 250px; width: 360px;" src="./assets/watches/55.jpg"
+                            alt="">
                     </figure>
                     <div class="shoe-details">
                         <h2>Reebok All Terrain</h2>
